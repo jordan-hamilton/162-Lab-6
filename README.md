@@ -87,84 +87,84 @@ The format of the text file is your decision. Some common format is to separate 
 
 **Example Run of the Program**
 
-Welcome to my linked list!
+      Welcome to my linked list!
 
-Choose from following options:
+      Choose from following options:
 
-1. Add a new node to the head;
-2. Add a new node to the tail;
-4. Delete from head;
-4. Delete from tail;
-5. Traverse the list reversely;
-6. Exit.
+      1. Add a new node to the head;
+      2. Add a new node to the tail;
+      3. Delete from head;
+      4. Delete from tail;
+      5. Traverse the list reversely;
+      6. Exit.
 
       1
 
-Please enter a positive integer:
+      Please enter a positive integer:
 
       15
 
-Your linked list is: 15
+      Your linked list is: 15
 
-Choose from following options:
+      Choose from following options:
 
-1. Add a new node to the head;
-2. Add a new node to the tail;
-4. Delete from head;
-4. Delete from tail;
-5. Traverse the list reversely;
-6. Exit.
+      1. Add a new node to the head;
+      2. Add a new node to the tail;
+      3. Delete from head;
+      4. Delete from tail;
+      5. Traverse the list reversely;
+      6. Exit.
 
       1
 
-Please enter a positive integer:
+      Please enter a positive integer:
 
       10
 
-Your linked list is: 10 15
+      Your linked list is: 10 15
 
-Choose from following options:
+      Choose from following options:
 
-1. Add a new node to the head;
-2. Add a new node to the tail;
-4. Delete from head;
-4. Delete from tail;
-5. Traverse the list reversely;
-6. Exit.
+      1. Add a new node to the head;
+      2. Add a new node to the tail;
+      3. Delete from head;
+      4. Delete from tail;
+      5. Traverse the list reversely;
+      6. Exit.
 
       2
 
-Please enter a positive integer:
+      Please enter a positive integer:
 
       5
 
-Your linked list is: 10 15 5
+      Your linked list is: 10 15 5
 
-Choose from following options:
+      Choose from following options:
 
-1. Add a new node to the head;
-2. Add a new node to the tail;
-4. Delete from head;
-4. Delete from tail;
-5. Traverse the list reversely;
-6. Exit.
+      1. Add a new node to the head;
+      2. Add a new node to the tail;
+      3. Delete from head;
+      4. Delete from tail;
+      5. Traverse the list reversely;
+      6. Exit.
 
       5
 
-Your linked list is: 5 15 10
+      Your linked list is: 5 15 10
 
-Choose from following options:
+      Choose from following options:
 
-1. Add a new node to the head;
-2. Add a new node to the tail;
-4. Delete from head;
-4. Delete from tail;
-5. Traverse the list reversely;
-6. Exit.
+      1. Add a new node to the head;
+      2. Add a new node to the tail;
+      3. Delete from head;
+      4. Delete from tail;
+      5. Traverse the list reversely;
+      6. Exit.
 
       4
 
-Your linked list is: 10 15
+      Your linked list is: 10 15
 
 **What you need to Submit**
 * All the program files including header and source files (.cpp/.hpp)
