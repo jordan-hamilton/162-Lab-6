@@ -24,6 +24,7 @@ For the doubly-linked list object, it has a **head** pointer that points to the 
 **Note:** You can decide the class name for doubly-linked list
 
 **Functions for the Linked List**
+
 Implement the functions to do the following linked list operations:
 
 1. Add a new node to the head.
@@ -36,11 +37,13 @@ Implement the functions to do the following linked list operations:
 **Menu**
 
 **Function #1, #2**
+
 When user adds a new node, the program should prompt the user to  **enter a number** and **validate the input**, before calling the function.
 
 **Operation of adding functions:** The function should create a new Node with inputted value stored inside, add the Node object to the list, and **re-assign the head tail pointer** accordingly. After the Node is added, the menu should **call function #6**, which prints the linked list from head to tail.
 
 **Function #3, #4**
+
 When user chooses to remove a node, the program should **check whether the list is empty**: if so, give a warning message, and if not, proceed with the function.
 
 **Operation of removal functions:** The function should delete the Node and **free the memory**, then re-assign head/tail pointers as well as the pointers inside adjacent Node of the Node removed.
@@ -48,10 +51,12 @@ When user chooses to remove a node, the program should **check whether the list 
 After the Node is removed, the menu should **call function #6**, which prints the linked list from head to tail.
 
 **Function #5**
+
 When user chooses to print the list in reverse from tail to head, the program should print the value of all Nodes in the linked list from **tail to head**. **If the list is empty, print a message to indicate that.**
 
 **Function #6**
-**Note:** Function #\6 is special, it does not exist in the menu option, but it gets called every time the user adds or removes a Node from the list.
+
+**Note:** Function #6 is special, it does not exist in the menu option, but it gets called every time the user adds or removes a Node from the list.
 
 Whenever this function is called inside the program, it should print the value of all Nodes in the linked list from **head to tail**. **If the list is empty, print a message to indicate that.**
 
@@ -60,13 +65,16 @@ Whenever this function is called inside the program, it should print the value o
 **Important:** For this lab, you cannot implement the linked list operations using functions from outside source. You need to write all the functions by yourself!
 
 **Extra Credit**
+
 **Task 1 (10%)**
+
 Add two more options:
 
 * Print the value of the Node the head is pointing to
 * Print the value of the Node the tail is pointing to
 
 **Task 2 (15%)**
+
 Create a linked list by reading from a text file:
 
 The program should have an option to create the linked list from a text file you created at the very beginning. And the user can continue to do operations on the newly created linked list.
@@ -90,11 +98,11 @@ Choose from following options:
 5. Traverse the list reversely;
 6. Exit.
 
-  1
+    1
 
 Please enter a positive integer:
 
-  15
+    15
 
 Your linked list is: 15
 
@@ -107,11 +115,11 @@ Choose from following options:
 5. Traverse the list reversely;
 6. Exit.
 
-  1
+    1
 
 Please enter a positive integer:
 
-  10
+    10
 
 Your linked list is: 10 15
 
@@ -124,11 +132,11 @@ Choose from following options:
 5. Traverse the list reversely;
 6. Exit.
 
-  2
+    2
 
 Please enter a positive integer:
 
-  5
+    5
 
 Your linked list is: 10 15 5
 
@@ -141,7 +149,7 @@ Choose from following options:
 5. Traverse the list reversely;
 6. Exit.
 
-  5
+    5
 
 Your linked list is: 5 15 10
 
@@ -154,7 +162,7 @@ Choose from following options:
 5. Traverse the list reversely;
 6. Exit.
 
-  4
+    4
 
 Your linked list is: 10 15
 
@@ -162,6 +170,7 @@ Your linked list is: 10 15
 * All the program files including header and source files (.cpp/.hpp)
 * Makefile
 * Textfile (For Extra Credit #2)
+s
 **Important:** Put all the files in a single .zip file and submit it on Canvas.
 
 **Grading**
