@@ -98,11 +98,11 @@ Choose from following options:
 5. Traverse the list reversely;
 6. Exit.
 
-    1
+      1
 
 Please enter a positive integer:
 
-    15
+      15
 
 Your linked list is: 15
 
@@ -115,11 +115,11 @@ Choose from following options:
 5. Traverse the list reversely;
 6. Exit.
 
-    1
+      1
 
 Please enter a positive integer:
 
-    10
+      10
 
 Your linked list is: 10 15
 
@@ -132,11 +132,11 @@ Choose from following options:
 5. Traverse the list reversely;
 6. Exit.
 
-    2
+      2
 
 Please enter a positive integer:
 
-    5
+      5
 
 Your linked list is: 10 15 5
 
@@ -149,7 +149,7 @@ Choose from following options:
 5. Traverse the list reversely;
 6. Exit.
 
-    5
+      5
 
 Your linked list is: 5 15 10
 
@@ -162,7 +162,7 @@ Choose from following options:
 5. Traverse the list reversely;
 6. Exit.
 
-    4
+      4
 
 Your linked list is: 10 15
 
@@ -170,7 +170,7 @@ Your linked list is: 10 15
 * All the program files including header and source files (.cpp/.hpp)
 * Makefile
 * Textfile (For Extra Credit #2)
-s
+
 **Important:** Put all the files in a single .zip file and submit it on Canvas.
 
 **Grading**
