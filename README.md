@@ -32,7 +32,7 @@ Implement the functions to do the following linked list operations:
 3. Delete the first node in the list.
 4. Delete the last node in the list.
 5. Traverse the list reversely. That is, to print the nodes from back of the linked list to the front (tail to head).
-7. Traverse the list. That is, to print the nodes from front of the linked list to the back (head to tail).
+6. Traverse the list. That is, to print the nodes from front of the linked list to the back (head to tail).
 
 **Menu**
 
