@@ -1,14 +1,15 @@
 #include "IntNode.hpp"
 
 IntNode::IntNode() {
-
+  val = 0;
+  prev = next = nullptr;
 }
 
 
-IntNode::IntNode(int valIn) {
+IntNode::IntNode(int valIn, IntNode* prevIn, IntNode* nextIn) {
   val = valIn;
-  prev = nullptr;
-  next = nullptr;
+  prev = prevIn;
+  next = nextIn;
 }
 
 
