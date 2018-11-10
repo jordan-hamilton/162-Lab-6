@@ -9,6 +9,7 @@ class LinkedList {
 
   public:
     LinkedList();
+    ~LinkedList();
     void addHead(int valIn);
     void addTail(int valIn);
     void removeHead();

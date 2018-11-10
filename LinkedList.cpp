@@ -8,6 +8,25 @@ LinkedList::LinkedList() {
 }
 
 
+LinkedList::~LinkedList() {
+
+  if (head) {
+
+    IntNode* nextNodeToDelete = head;
+
+    do {
+
+      IntNode* currentNode = nextNodeToDelete;
+      nextNodeToDelete = currentNode->getNext();
+      delete currentNode;
+
+    } while ( nextNodeToDelete );
+
+  }
+
+}
+
+
 void LinkedList::addHead(int valIn) {
 
   if (!head && !tail) {
