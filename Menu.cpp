@@ -241,8 +241,9 @@ void Menu::setEnteredString(const std::string &inputStr) {
 /*********************************************************************
 ** Description: This function accepts a reference to a string, which
 ** is then looped through to search for non-digit characters. The
-** return value is true is there are only digits in the string passed
-** to the function, otherwise, the function returns false.
+** return value is true if there are only digits or a minus sign at
+** the first index in the string passed to the function, otherwise,
+** the function returns false.
 *********************************************************************/
 bool Menu::validateInput(const string &inputStr) {
   bool isValid = true;
@@ -252,12 +253,19 @@ bool Menu::validateInput(const string &inputStr) {
   }
 
   for (unsigned int i = 0; i < inputStr.length(); i++) {
+
     if (!isdigit(inputStr[i])) {
-      isValid = false;
+
+      if (i != 0 || inputStr[i] != '-') {
+        isValid = false;
+      }
+
     }
+
   }
 
   return isValid;
+
 }
 
 
