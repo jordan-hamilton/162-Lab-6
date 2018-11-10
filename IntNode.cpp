@@ -1,7 +1,15 @@
 #include "IntNode.hpp"
 
-ntNode();
-IntNode(int valIn, IntNode* nextIn, IntNode* prevIn);
+IntNode::IntNode() {
+
+}
+
+
+IntNode::IntNode(int valIn) {
+  val = valIn;
+  prev = nullptr;
+  next = nullptr;
+}
 
 
 IntNode* IntNode::getNext(){
@@ -19,12 +27,12 @@ int IntNode::getVal() {
 }
 
 
-void IntNode::getNext(IntNode* nextIn) {
+void IntNode::setNext(IntNode* nextIn) {
   next = nextIn;
 }
 
 
-void IntNode::getPrev(IntNode* prevIn) {
+void IntNode::setPrev(IntNode* prevIn) {
   prev = prevIn;
 }
 

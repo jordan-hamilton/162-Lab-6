@@ -5,12 +5,12 @@ class IntNode {
 
   public:
     IntNode();
-    IntNode(int valIn, IntNode* nextIn, IntNode* prevIn);
+    IntNode(int valIn);
     IntNode* getNext();
     IntNode* getPrev();
     int getVal();
-    void getNext(IntNode* nextIn);
-    void getPrev(IntNode* prevIn);
+    void setNext(IntNode* nextIn);
+    void setPrev(IntNode* prevIn);
     void setVal(int valIn);
 
   private:

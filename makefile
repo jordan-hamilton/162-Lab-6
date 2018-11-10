@@ -6,9 +6,9 @@ CXXFLAGS += -Wall
 CXXFLAGS += -pedantic-errors
 CXXFLAGS += -g
 
-OBJS = main.o Menu.o IntNode.o
-SRCS = main.cpp Menu.cpp IntNode.cpp
-HEADERS = Menu.hpp IntNode.hpp
+OBJS = main.o Menu.o IntNode.o LinkedList.o
+SRCS = main.cpp Menu.cpp IntNode.cpp LinkedList.cpp
+HEADERS = Menu.hpp IntNode.hpp LinkedList.hpp
 
 lab6: $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o lab6
