@@ -1,37 +1,140 @@
 #include "LinkedList.hpp"
 
-/* For the doubly-linked list object, it has a head pointer that points to the
-** first Node in the linked list, and a tail pointer that points to the last Node
-** in the linked list. If the linked list is empty, the head and tail should
-** point to NULL. If the linked list has only one Node object, the head and tail
-** should both point to that Node object.
-*/
+using std::cout;
+using std::endl;
 
-void LinkedList::addHead() {
+LinkedList::LinkedList() {
+  head = tail = nullptr;
+}
+
+
+void LinkedList::addHead(int valIn) {
+
+  if (!head && !tail) {
+    head = tail = new IntNode(valIn, nullptr, nullptr);
+  } else if (head) {
+    IntNode* oldHead = head;
+    head = new IntNode(valIn, nullptr, oldHead);
+    oldHead->setPrev(head);
+  }
+
+  printTraversal();
 
 }
 
 
-void LinkedList::addTail() {
+void LinkedList::addTail(int valIn) {
+
+  if (!head && !tail) {
+    head = tail = new IntNode(valIn, nullptr, nullptr);
+  } else if (tail) {
+    IntNode* oldTail = tail;
+    tail = new IntNode(valIn, oldTail, nullptr);
+    oldTail->setNext(tail);
+  }
+
+  printTraversal();
 
 }
 
 
 void LinkedList::removeHead() {
 
+  if (head) {
+
+    if (head == tail) {
+      delete head;
+      head = tail = nullptr;
+    } else {
+      IntNode* newHead = head->getNext();
+      delete head;
+      head = newHead;
+      head->setPrev(nullptr);
+    }
+
+  }
+
+  printTraversal();
+
 }
 
 
 void LinkedList::removeTail() {
 
+  if (tail) {
+
+    if (head == tail) {
+      delete tail;
+      head = tail = nullptr;
+    } else {
+      IntNode* newTail = tail->getPrev();
+      delete tail;
+      tail = newTail;
+      tail->setNext(nullptr);
+    }
+
+  }
+
+  printTraversal();
+
 }
 
 
-void LinkedList::reverse() {
+void LinkedList::printReversal() {
+
+  if (!head && !tail) {
+    cout << "No items exist in this list." << endl;
+  } else {
+
+    IntNode* nodeToPrint = tail;
+
+    do {
+
+      cout << nodeToPrint->getVal() << endl;
+      nodeToPrint = nodeToPrint->getPrev();
+
+    } while ( nodeToPrint );
+
+  }
 
 }
 
 
-void LinkedList::traverse() {
+void LinkedList::printTraversal() {
 
+  if (!head && !tail) {
+    cout << "No items exist in this list." << endl;
+  } else {
+
+    IntNode* nodeToPrint = head;
+
+    do {
+
+      cout << nodeToPrint->getVal() << endl;
+      nodeToPrint = nodeToPrint->getNext();
+
+    } while ( nodeToPrint );
+
+  }
+
+}
+
+
+IntNode* LinkedList::getHead() {
+  return head;
+}
+
+
+IntNode* LinkedList::getTail() {
+  return tail;
+}
+
+
+void LinkedList::setHead(IntNode* headIn) {
+  head = headIn;
+}
+
+
+void LinkedList::setTail(IntNode* tailIn) {
+  tail = tailIn;
 }
