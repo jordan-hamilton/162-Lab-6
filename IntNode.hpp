@@ -5,7 +5,7 @@ class IntNode {
 
   public:
     IntNode();
-    IntNode(int valIn);
+    IntNode(int valIn, IntNode* prevIn, IntNode* nextIn);
     IntNode* getNext();
     IntNode* getPrev();
     int getVal();
