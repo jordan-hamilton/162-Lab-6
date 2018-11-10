@@ -1,17 +1,24 @@
 #ifndef LINKEDLIST_HPP
 #define LINKEDLIST_HPP
 
+#include <iostream>
+
 #include "IntNode.hpp"
 
 class LinkedList {
 
   public:
-    void addHead();
-    void addTail();
+    LinkedList();
+    void addHead(int valIn);
+    void addTail(int valIn);
     void removeHead();
     void removeTail();
-    void reverse();
-    void traverse();
+    void printReversal();
+    void printTraversal();
+    IntNode* getHead();
+    IntNode* getTail();
+    void setHead(IntNode* headIn);
+    void setTail(IntNode* tailIn);
 
   private:
     IntNode* head;
