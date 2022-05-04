@@ -17,13 +17,8 @@
 ** quit from the menu.
 ***********************************************************************************************/
 
-#include <iostream>
-
 #include "Menu.hpp"
 #include "LinkedList.hpp"
-
-using std::cout;
-using std::endl;
 
 void populateMenu(Menu* mainMenu);
 
@@ -62,9 +57,7 @@ int main() {
                break;
 
       default : {}
-
-      cout << endl << endl;
-
+      
     }
 
   } while(choice != 6);
